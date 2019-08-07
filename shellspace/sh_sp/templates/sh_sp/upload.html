@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Link</title>
+	  <meta charset="utf-8">
+      {% load static %}
+        <link rel="stylesheet" href="{% static 'sh_sp/main.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+            <h1>ShellSpace</h1>
+    </header>
+    <main>
+    	<section class="prime">
+    		<h3>Your download link is</h3>
+    		<textarea id="link"></textarea>
+    		 <button id="copy_button" type="button">Copy</button> 
+    	</section>
+    	<section class="secondary">
+    		<p>Advanced:
+	    		<h3>Download expires after</h3>
+	    		<ul>
+	    			
+	    			<li>Days:            <input type="text" name="days" class="txt" > </li>
+	    			<li>Downloads:<input type="text" name="downloads"  class="txt"> </li>
+	    			
+	    		</ul>
+
+	    		<h3>Password Protect file</h3>
+	    		<input type="password" name="password" placeholder="******">
+
+	    		<h3>Version control</h3>
+	    		You can re-upload with the same to add multiple version.
+	    		
+	    		<h3> Set default version:</h3>
+	    			<ul>
+	    				<p> <input type="radio" name=""value="">14-03-19 </p>
+	    				<p><input type="radio" name="" value="">18-07-19
+	    				</p>
+	    		 	</ul>
+	    		
+    		</p>
+    		<a href="#">
+                <div id="prime-button">Re-Upload</div>
+            </a>
+    	</section>
+    </main>
+
+</body>
+</html>
